@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:background="@drawable/blank" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/station"
+        android:background="#00AA00"
+        android:gravity="center"
+        android:text="電池數量"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/hoyo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/station"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/station"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FF8800"
+        android:gravity="center"
+        android:text="狀態"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

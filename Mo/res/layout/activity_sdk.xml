@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SDK" >
+
+<ImageView
+    android:id="@+id/ihuio"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/Previous"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+     android:background="#55AA00" />
+
+<ImageButton
+     android:id="@+id/Previous"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@android:color/transparent"
+     android:src="@drawable/page" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="開發人員"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/ihuio"
+    android:src="@drawable/cut2" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="18dp"
+    android:text="程式前台介面與後台資料庫開發"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView4"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="陳昱儒      李健源" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView3"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="19dp"
+    android:text="美術圖與icon設計"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/textView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView3"
+    android:layout_below="@+id/textView2"
+    android:layout_marginTop="23dp"
+    android:text="魏廷家"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView5"
+    android:layout_alignBottom="@+id/textView5"
+    android:layout_alignRight="@+id/textView3"
+    android:text="陳于鑫" />
+
+<TextView
+    android:id="@+id/textView7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/ihuio"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:text="開發人員"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#ffffff"
+    android:textStyle="bold" />
+ />
+
+</RelativeLayout>

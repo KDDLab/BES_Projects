@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city">
+        <item>台北</item>
+        <item>新竹</item>
+        <item>桃園</item>
+        <item>高雄</item>
+        <item>台中</item>
+        <item>嘉義</item>
+        <item>台南</item>
+        <item>苗栗</item>
+        <item>彰化</item>
+        <item>雲林</item>
+        <item>南投</item>
+         <item>屏東</item>
+          <item>宜蘭</item>
+           <item>花蓮</item>
+            <item>台東</item>
+             
+        
+    </string-array >
+    
+    <string-array name="location">
+        <item>GPS定位</item>
+        <item>網路定位</item>
+         <item>精準定位</item>
+            
+            
+        </string-array>
+</resources>

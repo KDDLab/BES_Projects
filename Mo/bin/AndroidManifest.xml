@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="permission_name" />
+    <uses-permission android:name="com.example.mo.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.example.mo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/besbattery"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBvi5OBEZ1soVroIR-zZUjLMkex4WaKQGA" />
+        
+   
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.example.mo.Loading"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mo.password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.Battery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.TabUi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.Personal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.oder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.OderBattery"
+            android:label="@string/title_activity_oder_battery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.Ui"
+            android:label="@string/title_activity_listmenu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.LISTMenu"
+            android:label="@string/title_activity_loading"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.QueryStation"
+            android:label="@string/title_activity_query_station"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name="com.example.mo.MAPStatuon"
+            android:label="@string/title_activity_mapstatuon"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.SDK"
+            android:label="@string/title_activity_sdk"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.OnlyLoading"
+            android:label="@string/title_activity_only_loading"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.Report"
+            android:label="@string/title_activity_report"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.User"
+            android:label="@string/title_activity_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.AboutCity"
+            android:label="@string/title_activity_about_city" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.mo.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

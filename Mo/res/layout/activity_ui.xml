@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui" >
+
+<fragment
+    android:id="@+id/map"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/imageView2"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/Previous"
+    class="com.google.android.gms.maps.SupportMapFragment" />
+
+ <ImageView
+     android:id="@+id/ihuio"
+     android:layout_width="wrap_content"
+     android:layout_height="100dp"
+     android:layout_alignBottom="@+id/Previous"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentTop="true"
+       android:background="#55AA00" />
+
+ <ImageButton
+     android:id="@+id/Previous"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@android:color/transparent"
+     android:src="@drawable/page" />
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/blank" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:text="" />
+
+
+
+<TextView
+    android:id="@+id/View"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:layout_above="@+id/map"
+    android:layout_toRightOf="@+id/Previous"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:text="交換站分布圖"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#ffffff"
+    android:textSize="20sp" />
+
+<ImageButton
+    android:id="@+id/updata"
+    android:layout_width="60dp"
+    android:layout_height="40dp"
+    android:layout_above="@+id/map"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@android:color/transparent"
+    android:onClick="updata"
+    android:src="@drawable/na" />
+
+
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/map"
+    android:layout_toLeftOf="@+id/View"
+    android:src="@drawable/fofo" />
+
+<ImageButton
+    android:id="@+id/Letgo"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignTop="@+id/imageView2"
+    android:src="@drawable/gogogo" />
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/distance"
+    android:layout_alignTop="@+id/imageView2"
+    android:layout_toRightOf="@+id/imageView1"
+     android:textStyle="bold"
+    android:text="請點選地標取得資訊" />
+
+<TextView
+    android:id="@+id/station"
+    android:layout_width="60dp"
+    android:layout_height="36dp"
+    android:layout_alignTop="@+id/imageView2"
+    android:layout_toLeftOf="@+id/Letgo"
+    android:background="#FF8800"
+    android:gravity="center"
+    android:text="狀態"
+    android:textColor="#ffffff" />
+
+<TextView
+    android:id="@+id/quantity"
+    android:layout_width="60dp"
+    android:layout_height="35dp"
+    android:layout_alignLeft="@+id/station"
+    android:layout_alignParentBottom="true"
+    android:layout_toLeftOf="@+id/Letgo"
+    android:background="#00AA00"
+    android:gravity="center"
+    android:text="電池數量"
+    android:textColor="#ffffff" />
+
+<TextView
+    android:id="@+id/distance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_toLeftOf="@+id/quantity"
+    android:layout_toRightOf="@+id/imageView1"
+    android:text="" />
+
+<TextView
+    android:id="@+id/address"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/distance"
+    android:layout_alignLeft="@+id/name"
+    android:layout_alignRight="@+id/distance"
+    android:layout_below="@+id/name"
+    android:text="" />
+
+</RelativeLayout>
